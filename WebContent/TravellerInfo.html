@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+form
+{
+	text-align=center;
+	}
+</style>
+<meta charset="ISO-8859-1">
+<title>Traveller info</title>
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+<style>
+div#tooplate_header
+{
+background-color:Black;
+}
+</style>
+</head>
+<body bgcolor="tan">
+<div id="tooplate_body_wrapper">
+<div id="tooplate_wrapper">
+	<div id="tooplate_top_bar">
+    	<a class="social_btn twitter">&nbsp;</a>
+        <a class="social_btn facebook">&nbsp;</a>
+    </div>	
+    
+    <div id="tooplate_header">
+        <div id="site_title"><h1><a href="#"></a></h1></div>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">AboutUs</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="SignUp.html">SignUp</a></li>
+                 <li><a href="LoginPage.html">Login</a></li>
+                
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- end of forever header -->
+    
+	<form action="TravellerInfo" method="get" align="center">
+		<h2>Traveler information</h2>
+		Your email:<input type="email"  name="emailid" required><br>
+		<br> First Name:<input type="text"  name="fname" required><br>
+		<br> Last Name:<input type="text"  name="lname" required><br>
+		<br>
+		<br>
+		<h2>Billing address</h2>
+		Name:<input type="text" name="name" required><br>
+		<br> Address:<input type="text"  name="addr" required><br>
+		<br> Zip code:<input type="text" name="zipcode" required><br>
+		<br>
+		<br>
+		<button onclick="WebContent/Payment.html">Submit</button>
+	</form><br>
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	<div class="col_w200 float_l">
+        	<h4>Pages</h4>
+            <ul class="tooplate_list">
+                <li><a href="#">Passengers review</a></li>
+                <li><a href="#">Write a review</a></li>
+                <li><a href="#">Review for a driver</a></li>
+                
+            </ul>
+        </div>
+        
+		<div class="col_w200 float_l" align="center">
+        	<h4>Partners</h4>
+            <ul class="tooplate_list">
+	            <li><a href="#">BoltBus</a></li>
+                <li><a href="#">White Coach </a></li>
+                <li><a href="#">Neon</a></li>
+                <li><a href="#">Yo!Bus</a></li>
+                
+            </ul>
+        </div>
+        <div class="col_w200 float_r col_last">
+        	<h4>Contact Us</h4>
+            142-115 Red Coach, <br />
+            Edison,NJ <br />
+           
+            Phone: 010-010-5500 <br />
+            Email: <a href="mailto:info@company.com">info@redcoach.com</a>
+        </div>
+        
+        <div class="cleaner"></div>
+    </div>
+</div>
+
+<div id="tooplate_copyright_wrapper">
+	<div id="tooplate_copyright">
+    	
+		Copyright © 2048 <a href="#">Red Coach</a>
+		
+    </div>
+</div>
+</body>
+</html>

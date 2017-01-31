@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+<style>
+div#tooplate_header
+{
+background-color:Black;
+}
+</style>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<style>
+ul#sidebar {
+    padding: 0;
+    text-align:left;
+}
+
+ul#sidebar li {
+    display: inline-block;
+    padding: 20px; 
+    width:200px;
+    
+}
+
+ul#sidebar li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#sidebar li a:hover {
+    background-color: orange;
+}
+
+</style>
+
+
+
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["from"]["To"]["JDate"].value;
+if (x==null || x=="")
+  {
+  alert("Please fill out");
+  return false;
+  }
+}
+function GetSelectedItem(el)
+{
+    var e = document.getElementById(el);
+    var strSel =   e.options[e.selectedIndex].text;
+    alert(strSel);
+    	//window.location="RailwayReservation/SignUp.html";
+    	
+    	alert("hi");
+    	
+        var from = document.getElementById("select1").value;
+        var to = document.getElementById("select2").value;
+        var letters = '/^[a-zA-Z]+$/'; 
+        if((parseInt(x)!=(x))&&(y==parseInt(y))){
+            alert("Wrong Value Entered");
+        }
+        else{
+            var rows = "";
+            var from = document.getElementById("select1").value;
+            var to = document.getElementById("select2").value;
+             
+
+            rows += "<tr><td>" + from + "</td><td>" + to +  "</td></tr>";
+            $(rows).appendTo("#list tbody");
+        }   
+    	
+    	 
+}
+
+</script>
+<style >
+table
+{
+text-align:center;
+}
+form
+{
+text-align:center;
+border-style:solid;
+ background-color: grey;
+}
+</style>
+<meta charset="ISO-8859-1">
+
+<body bgcolor="tan">
+<div id="tooplate_body_wrapper">
+<div id="tooplate_wrapper">
+	<div id="tooplate_top_bar">
+    	<a class="social_btn twitter">&nbsp;</a>
+        <a class="social_btn facebook">&nbsp;</a>
+    </div>	
+    
+    <div id="tooplate_header">
+        <div id="site_title"><h1><a href="#">Iron Rush</a></h1></div>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+                <li><a href="SignUp.html">SignUp</a></li>
+                 <li><a href="LoginPage.html">Login</a></li>
+                
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- end of forever header -->
+    
+<h2 style="font-family: 'Comic sans MS'; color:Red" align="center">&nbsp;&nbsp;BOOK THE TRIP<title>TripDetails</title></h2>
+
+<form post="get" action="nye.html" bgcolor="#E6E6FA" >
+<br><br><label style="font-family: 'Comic Sans MS'; color: Blue" for="DepartDate">From:</label>
+<input type="text" placeholder="Enter the city or zipcode">&nbsp;&nbsp;&nbsp;
+  <!--   <select id="select1" name="from" required >
+<option value="NYC" name="from" value="1">NYC</option>
+<option value="Kearny" name="from" value="2">KEARNY</option>
+<option value="DC" name="from" value="3">WASHINGTON DC</option>
+<option value="Bufflo" name="from" value="4">BUFFULO</option>
+<option value="Harrisburg" name="from" value="5">HARRISBURG</option>
+</select><br><br> -->
+<label style="font-family: 'Comic Sans MS'; color: Blue" for="DepartDate">To:</label>
+<input type="text" placeholder="Enter the city or zipcode"><br><br><br>
+<!--  <label style="font-family: 'Comic Sans MS'; color: Blue" for="to">To:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<select id="select2" name="to" required>
+<option value="NYC" name="To">NYC</option>
+<option value="Kearny" name="To">KEARNY</option>
+<option value="DC" name="To">DC</option>
+<option value="Bufflo" name="To">BUFFULO</option>
+<option value="Harrisburg" name="To">HARRISBURG</option>
+</select><br><br> -->
+<label style="font-family: 'Comic Sans MS'; color: Blue" for="DepartDate">Depart on:</label>
+<script>   
+    $(function() {
+         $( "#calendar" ).datepicker();   
+    }); 
+</script>
+
+<input type="date" id="Calender" value="" name="DepartDate" required></input>&nbsp;&nbsp;&nbsp; 
+<label style="font-family: 'Comic Sans MS'; color: Blue" for="ReturnDate">Return on:</label>
+<input type="date" id="Calender" value="" name="ReturnDate" ></input><br><br><br> 
+
+<label style="font-family: 'Comic Sans MS'; color: Blue" for="NoPassengers">No of passengers:</label>
+<input type="text" name="NoPassengers"><br><br>
+<input type="submit" style="font-family: 'Comic Sans MS'; color: Blue"><br><br>
+
+
+
+
+
+
+
+
+
+
+<!--<form onclick="return GetSelectedItem(el)">
+ <table style="width:100%" id="select1">
+  <tr>
+    <th>Train</th> 
+    <th>Departure time</th>
+    <th>Arrival time</th>  
+  </tr>
+  <tr align="center">
+    
+    <td onclick="location.href='nye.html'">New York Express</td> 
+    <td>10:15 </td>
+    <td>14:00 </td>
+  </tr>
+  <tr align="center">
+    
+    <td onclick="location.href='nye.html'">New Jersey Express</td> 
+    <td>07:45 </td>
+    <td>87878 </td>
+  </tr>
+  <tr align="center">
+    
+    <td onclick="location.href='nye.html'">Light rail</td> 
+    <td>10:15 </td>
+    <td>14:00 </td>
+  </tr>
+</table>
+<table id="select2">
+<tr>
+<th>
+hi
+</th>
+<th>hello</th>
+</tr>
+</table>-->
+</form><br>
+<div class="cleaner"></div>
+</div> <!-- end of forever wrapper -->
+</div> <!-- end of forever body wrapper -->
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	<div class="col_w200 float_l">
+        	<h4>Pages</h4>
+            <ul class="tooplate_list">
+                <li><a href="#">Passengers review</a></li>
+                <li><a href="#">Write a review</a></li>
+                <li><a href="#">Review for a driver</a></li>
+                <li><a href="#">Nulla congue lorem</a></li>
+                
+            </ul>
+        </div>
+        
+		<div class="col_w200 float_l">
+        	<h4>Partners</h4>
+            <ul class="tooplate_list">
+	            <li><a href="#">BoltBus</a></li>
+                <li><a href="#">White Coach </a></li>
+                <li><a href="#">Neon</a></li>
+                <li><a href="#">Yo!Bus</a></li>
+                <
+            </ul>
+        </div>
+        <div class="col_w200 float_r col_last">
+        	<h4>Contact Us</h4>
+            142-115 Maecenas ac eros ut, <br />
+            Curabitur vehicula elit, 15540 <br />
+            Suspendisse euismod<br /><br />
+            Phone: 010-010-5500 <br />
+            Email: <a href="mailto:info@company.com">info@company.com</a>
+        </div>
+        
+        <div class="cleaner"></div>
+    </div>
+</div>
+
+<div id="tooplate_copyright_wrapper">
+	<div id="tooplate_copyright">
+    	
+		Copyright © 2048 <a href="#">Company Name</a>
+		
+    </div>
+</div>
+</body>
+</html>

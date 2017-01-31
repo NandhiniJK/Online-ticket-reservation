@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+  
+
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login</title>
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["UserName"]["Password"].value;
+if (x==null || x=="")
+  {
+  alert("Please fill out the username");
+  return false;
+  }
+}
+</script>
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+<style>
+div#tooplate_header
+{
+background-color:Black;
+}
+</style>
+<head >
+<style >
+
+form {
+  text-align:center;
+}
+img {
+    float:left;
+}
+h1 {
+    float:left;
+}
+table
+{
+float:right;
+}
+</style>
+</head>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<body bgcolor="tan">
+<div id="tooplate_body_wrapper">
+<div id="tooplate_wrapper">
+	<div id="tooplate_top_bar">
+    	<a class="social_btn twitter">&nbsp;</a>
+        <a class="social_btn facebook">&nbsp;</a>
+    </div>	
+    
+    <div id="tooplate_header">
+        <div id="site_title"><h1><a href="#">Iron Rush</a></h1></div>
+        <div id="tooplate_menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="TripDetails.html">Booking</a></li>
+                <li><a href="ContactUs.html">Contacts</a></li>
+                <li><a href="SignUp.html">SignUp</a></li>
+                 <li><a href="LoginPage.html">Login</a></li>
+                
+            </ul>    	
+        </div> <!-- end of tooplate_menu -->
+    </div> <!-- end of forever header -->
+    <h3 style="font-family: 'Comic Sans MS'; color: Red" align="center">LOGIN HERE</h3>
+    
+<form action="TripDetails.html" method="post" onclick="return validateForm()">
+<label style="font-family:'Comic Sans MS';color:Blue" for="UserName" > UserName</label>
+<input type="text" id="UserName" name="UserName" placeholder="youremailid@email.com" required/><br><br><br>
+<label style="font-family:'Comic Sans MS';color:Blue" for="Password" >Password &nbsp;</label>
+<input type="password" id="Password" name="Password" placeholder="password" required/><br><br>
+
+<button onclick="TripDetails.html">Login</button><br><br>
+<p align="center">or</p><br><br>
+
+<a href="SignUp.html">Sign up</a><br>
+</form>
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	<div class="col_w200 float_l">
+        	<h4>Pages</h4>
+            <ul class="tooplate_list">
+                <li><a href="#">Passengers review</a></li>
+                <li><a href="#">Write a review</a></li>
+                <li><a href="#">Review for a driver</a></li>
+                <li><a href="#">Nulla congue lorem</a></li>
+                
+            </ul>
+        </div>
+        
+		<div class="col_w200 float_l">
+        	<h4>Partners</h4>
+            <ul class="tooplate_list">
+	            <li><a href="#">BoltBus</a></li>
+                <li><a href="#">White Coach </a></li>
+                <li><a href="#">Neon</a></li>
+                <li><a href="#">Yo!Bus</a></li>
+                <
+            </ul>
+        </div>
+        <div class="col_w200 float_r col_last">
+        	<h4>Contact Us</h4>
+            142-115 Red Coach, <br />
+            Edison,NJ <br />
+           
+            Phone: 010-010-5500 <br />
+            Email: <a href="mailto:info@company.com">info@redcoach.com</a>
+        </div>
+        
+        <div class="cleaner"></div>
+    </div>
+</div>
+
+<div id="tooplate_copyright_wrapper">
+	<div id="tooplate_copyright">
+    	
+		Copyright © 2048 <a href="#">Red Coach</a>
+		
+    </div>
+</div>
+</body>
+</html>

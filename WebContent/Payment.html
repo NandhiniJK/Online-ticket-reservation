@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Payment</title>
+<script type="text/javascript">
+function validateForm()
+{
+var x=document.forms["Card type"]["Cardnumber"]["Name"]["EDate"].value;
+if (x==null || x=="")
+  {
+  alert("Please fill out");
+  return false;
+  }
+}
+</script>
+</head>
+<style>
+form
+{
+text-align:center;
+border-style: solid;
+
+}
+h3
+{
+text-align:center;
+}
+
+</style>
+<h3>Enter the details below to make the payment</h3><br><br>
+<body bgcolor="tan">
+<form  method="post" onclick="return validateForm()">
+<label for="Card type" >Card type:</label>
+<input type="radio" name="Card type" required>Visa
+&nbsp;<input type="radio" name="Card type" required>Master<br><br>
+<label for="CardNumber">Card Number:</label>
+<input type="text" name="CardNumber" required><br><br>
+<label for="Name">Name on the card:</label>
+<input type="text" name="Name" required><br><br>
+<label for="EDate">Expiry date:</label>
+<input type="date" name="EDate" required><br><br>
+<button onclick="location.href='Ticket.html'">Pay</button><br><br>
+</form>
+<!-- function validateForm()
+{
+var x=document.forms["login"]["username"].value;
+if (x==null || x=="")
+  {
+  alert("Please fill out the username");
+  return false;
+  }
+} -->
+</body>
+</html>
